@@ -1,0 +1,320 @@
+* {
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Form CSS */
+.form {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(30, 185, 190)),
+    url(Pictures/form.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+
+.input {
+  margin-bottom: 30px;
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  font-size: 15px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: black;
+  cursor: text;
+  transition: 0.2s;
+}
+.formButton {
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  width: 100%;
+  cursor: pointer;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+/* Header and Footer CSS */
+.MenuIcon {
+  height: 5vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(228, 76, 76);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(3, 87, 184);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.FootList {
+  height: 5vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(3, 87, 184);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  width: 100%;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* Serivce Page CSS */
+.service {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.1;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex: 0.1;
+}
+
+.visuals {
+  text-align: center;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  height: 70vh;
+  width: 50vw;
+}
+
+body {
+  background-color: rgb(174, 220, 235);
+}
+
+.service {
+  display: flex;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+@media (max-width: 990px) {
+  .stats {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.cases {
+  border-bottom: 10px solid blue;
+  color: blue;
+}
+.deaths {
+  border-bottom: 10px solid red;
+  color: red;
+}
+.recovered {
+  border-bottom: 10px solid green;
+  color: green;
+}
+.lineCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+/* Login and Logout */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.loginForm > h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.loginForm > input {
+  min-width: 380px;
+  padding: 20px 0;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  font-family: "Inter";
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.submitButton {
+  padding: 17px 30px;
+  margin-top: 10px;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Inter";
+  border-radius: 3px;
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Inter";
+}
+
+.logoutButton {
+  min-width: 300px;
+  padding: 17px 30px;
+  margin-top: 20px;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Inter";
+  border-radius: 3px;
+}
+
+.userName {
+  color: #ce15d4;
+}
+
+/* Links */
+.clickLinks:visited {
+  color: aliceblue;
+}
+
+/* Homepage */
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(30, 185, 190)),
+    url(Pictures/Homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+p {
+  font-size: large;
+}
+h1 {
+  font-size: 30px;
+}
+
+/* VaccinePage */
+
+.vaccinePage {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(45, 243, 111)),
+    url(Pictures/Vaccine.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+/* LoginPage */
+.mainLogin {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(115, 127, 235)),
+    url(Pictures/Login.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  border: solid black;
+}
+.itemList {
+  padding: 10px;
+  margin: 5px;
+}
